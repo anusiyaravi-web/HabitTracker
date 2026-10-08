@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Habit Tracker</h1>
+
+        <form id="habitForm">
+
+            <label>Habit Name</label>
+            <input type="text" id="habitName" placeholder="Enter Habit">
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Enter Description"></textarea>
+
+            <label>Category</label>
+            <select id="category">
+                <option value="">Select Category</option>
+                <option>Health</option>
+                <option>Study</option>
+                <option>Fitness</option>
+                <option>Personal</option>
+            </select>
+
+            <label>Target Days</label>
+            <input type="number" id="targetDays" placeholder="Enter Target Days">
+
+            <button type="submit">Add Habit</button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <h2>Habit List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Habit</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Days</th>
+                </tr>
+            </thead>
+
+            <tbody id="habitTableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
